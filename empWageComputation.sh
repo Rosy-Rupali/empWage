@@ -41,3 +41,4 @@ done
 
 totalSalary=$( calcDailyWage $totalEmpHrs )
 echo "Daily wage "${empDailyWage[@]}
+echo "All keys "${!empDailyWage[@]}
