@@ -11,7 +11,7 @@ totalEmpHrs=0
 totalSalary=0
 totalWorkingDays=0
 
-function getWorkingHours() {
+function getWorkHours() {
 	case $1 in
 		 $isFullTime) 
 				empHrs=8
@@ -29,7 +29,7 @@ function getWorkingHours() {
 while [[ $totalEmpHrs -lt $maxHrsInMonth && $totalWorkingDays -lt $numWorkingDays ]]
 do
 	(( totalWorkingDays++ ))
-		empHrs=$( getWorkingHours $((RANDOM%3)) )
+		empHrs=$( getWorkHours $((RANDOM%3)) )
 		totalEmpHrs=$(($totalEmpHrs+$empHrs))
 done
 
